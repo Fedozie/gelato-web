@@ -11,9 +11,7 @@
                 <button class="btn">Place an order</button>
             </div>
             <div class="main-description-image">
-                <svg>
-                    <use xlink:href="assets/Main Image.svg"></use>
-                </svg>
+                <img :src="mainImage" alt=""/>
             </div>
         </div>
         <div class="main-galleria">
@@ -55,6 +53,7 @@ export default {
     name: 'Main',
     data(){
         return {
+            mainImage: '../assets/MainImage.svg',
             image1: '../assets/Rectangle11.jpg',
             image2: '../assets/Rectangle10.jpg',
             image3: '../assets/Rectangle8.jpg',
